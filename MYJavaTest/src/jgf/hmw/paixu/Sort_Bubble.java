@@ -1,25 +1,26 @@
 package jgf.hmw.paixu;
 /**
  * 
- * @author ½­¹ú¸»
- * ±êÌâ£ºÃ°ÅİÅÅĞòËã·¨	
- * ÈÕÆÚ£º2013.8.8
- * ¼ò½é£º
+ * @author ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * ï¿½ï¿½ï¿½â£ºÃ°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ã·¨	
+ * ï¿½ï¿½ï¿½Ú£ï¿½2013.8.8
+ * ï¿½ï¿½ï¿½é£º
+ *
  */
 public class Sort_Bubble {
 
-	//´ıÅÅĞòµÄÊı×é
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	public static int[] array={1,4,23,54,2,65,21,123,12,34};
-	//ÅÅĞòËã·¨ ´Ó´óµ½Ğ¡
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ã·¨ ï¿½Ó´ï¿½ï¿½ï¿½Ğ¡
 	public static int[] sortDown(int[] array)
 	{
 		
 		for(int i=array.length-1;i>=1;i--)
 		{
-			//µ±array.length=nÊ±£¬i=n-1
+			//ï¿½ï¿½array.length=nÊ±ï¿½ï¿½i=n-1
 			for(int j=0;j<i;j++)
 			{
-				//µ±i=n-1Ê±£¬j=n-2,j+1=n-1;
+				//ï¿½ï¿½i=n-1Ê±ï¿½ï¿½j=n-2,j+1=n-1;
 				if(array[j]<array[j+1])
 				{
 					int temp;
@@ -31,7 +32,7 @@ public class Sort_Bubble {
 		}
 		return array;
 	}
-	//ÅÅĞòËã·¨ ´ÓĞ¡µ½´ó
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ã·¨ ï¿½ï¿½Ğ¡ï¿½ï¿½ï¿½ï¿½
 	public static int[] sortUp(int[] array)
 	{
 		for(int i=0;i<array.length-1;i++)
@@ -50,7 +51,7 @@ public class Sort_Bubble {
 		}
 		return array;
 	}
-	//ÅÅĞòËã·¨
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ã·¨
 	public static int[] sort(int [] array,boolean up)
 	{
 		if(up)
@@ -68,14 +69,14 @@ public class Sort_Bubble {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("*********¶ÔÊı×éÔªËØ½øĞĞÉıĞòÅÅĞò*********");
-		int []upsortInt=sort(array,true);//ÉıĞòÅÅĞò
+		System.out.println("*********ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*********");
+		int []upsortInt=sort(array,true);//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		for(int i=0;i<upsortInt.length;i++)
 		{
 			System.out.println(upsortInt[i]);
 		}
-		System.out.println("*********¶ÔÊı×éÔªËØ½øĞĞ½µĞòÅÅĞò*********");		
-		int []downsortInt=sort(array,false);//½µĞòÅÅĞò
+		System.out.println("*********ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø½ï¿½ï¿½Ğ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*********");		
+		int []downsortInt=sort(array,false);//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		for(int i=0;i<downsortInt.length;i++)
 		{
 			System.out.println(downsortInt[i]);
