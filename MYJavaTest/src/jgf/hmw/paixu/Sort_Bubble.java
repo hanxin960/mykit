@@ -1,25 +1,19 @@
 package jgf.hmw.paixu;
-/**
- * 
- * @author Ω≠π˙∏ª
- * ±ÍÃ‚£∫√∞≈›≈≈–ÚÀ„∑®	
- * »’∆⁄£∫2013.8.8
- * ºÚΩÈ£∫
- */
+
 public class Sort_Bubble {
 
-	//¥˝≈≈–Úµƒ ˝◊È
+
 	public static int[] array={1,4,23,54,2,65,21,123,12,34};
-	//≈≈–ÚÀ„∑® ¥”¥ÛµΩ–°
+
 	public static int[] sortDown(int[] array)
 	{
 		
 		for(int i=array.length-1;i>=1;i--)
 		{
-			//µ±array.length=n ±£¨i=n-1
+		
 			for(int j=0;j<i;j++)
 			{
-				//µ±i=n-1 ±£¨j=n-2,j+1=n-1;
+			
 				if(array[j]<array[j+1])
 				{
 					int temp;
@@ -31,7 +25,7 @@ public class Sort_Bubble {
 		}
 		return array;
 	}
-	//≈≈–ÚÀ„∑® ¥”–°µΩ¥Û
+
 	public static int[] sortUp(int[] array)
 	{
 		for(int i=0;i<array.length-1;i++)
@@ -50,7 +44,7 @@ public class Sort_Bubble {
 		}
 		return array;
 	}
-	//≈≈–ÚÀ„∑®
+
 	public static int[] sort(int [] array,boolean up)
 	{
 		if(up)
@@ -62,20 +56,16 @@ public class Sort_Bubble {
 			return sortDown(array);
 		}
 	}
-
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println("*********∂‘ ˝◊È‘™ÀÿΩ¯––…˝–Ú≈≈–Ú*********");
-		int []upsortInt=sort(array,true);//…˝–Ú≈≈–Ú
+
+		System.out.println("*********ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ‘™ÔøΩÿΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ*********");
+		int []upsortInt=sort(array,true);
 		for(int i=0;i<upsortInt.length;i++)
 		{
 			System.out.println(upsortInt[i]);
 		}
-		System.out.println("*********∂‘ ˝◊È‘™ÀÿΩ¯––Ωµ–Ú≈≈–Ú*********");		
-		int []downsortInt=sort(array,false);//Ωµ–Ú≈≈–Ú
+		System.out.println("*********ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ‘™ÔøΩÿΩÔøΩÔøΩ–ΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ*********");		
+		int []downsortInt=sort(array,false);
 		for(int i=0;i<downsortInt.length;i++)
 		{
 			System.out.println(downsortInt[i]);
