@@ -1,12 +1,5 @@
-package jgf.hmw.paixu;
-/**
- * 
- * @author ������
- * ���⣺ð�������㷨	
- * ���ڣ�2013.8.8
- * ���飺
- *
- */
+﻿package jgf.hmw.paixu;
+
 public class Sort_Bubble {
 
 	//������������
